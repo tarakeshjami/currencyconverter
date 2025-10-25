@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+    <h2>Currency Converter</h2>
+    <form>
+        <div>
+            <input type="text" id="amount" placeholder="enter amount">
+            <div class="dropdowns">
+                <div id="from">
+                    <p class="ft">From</p>
+                    <div>
+                    <img src="https://flagsapi.com/US/shiny/64.png">
+                    <select id="from-select">
+                        <!-- <option selected>USD</option> -->
+                    </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+               <!---- <iframe style="position: absolute;" src = "https://img.freepik.com/premium-vector/exchange-icon_1269515-740.jpg"id="exchange icon" width="250" height="250"></iframe> -->
+                <div id="to">
+                    <p class="ft">to</p>
+                    <div>
+                    <img src="https://flagsapi.com/IN/shiny/64.png">
+                    <select id="to-select">
+                        <!-- <option selected>INR</option> -->
+                    </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message">1 USD=87 INR</div>
+        <button id="convert-btn">Convert</button>
+
+    </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
