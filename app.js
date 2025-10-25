@@ -43,6 +43,14 @@ mybutton.addEventListener('click',(ele)=>{
 //   changemsg();
 // });
 async function changemsg(){
+     if(a.value===""){
+        alert("Please enter amount to convert");
+        return;
+    }
+    else if(a.value<=0){
+        alert("Please enter a valid amount greater than zero");
+        return;
+    }
     let url=`${base_url}${c.value.toLowerCase()}.json`;
     let f=await fetch(url);
     let data=await f.json();
@@ -52,4 +60,5 @@ async function changemsg(){
         console.log(a.value * data[c.value.toLowerCase()][d.value.toLowerCase()]);
     let msg=document.querySelector("#message");
     msg.innerText=` ${a.value}  ${c.value} in ${d.value} = ${ (a.value * data[c.value.toLowerCase()][d.value.toLowerCase()])}`;
+
 }
